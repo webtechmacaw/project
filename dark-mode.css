@@ -1,0 +1,18 @@
+/* Dark mode – only Black, White, Accent */
+[data-theme="dark"] .hero-image { opacity: 0.95; }
+[data-theme="dark"] .card { box-shadow: none; }
+[data-theme="dark"] .pricing-card.featured {
+  box-shadow: 0 0 0 1px var(--accent), var(--shadow-lg);
+}
+[data-theme="dark"] .stats-bar { background: var(--black); }
+[data-theme="dark"] input[type="date"],
+[data-theme="dark"] input[type="time"] { color-scheme: dark; }
+[data-theme="dark"] ::-webkit-scrollbar { width: 8px; height: 8px; }
+[data-theme="dark"] ::-webkit-scrollbar-track { background: var(--black); }
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,126 @@
+/* ============================================
+   DriveMaster - RTL Support (Arabic / Hebrew)
+   Apply dir="rtl" on <html> to activate
+   ============================================ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .text-left { text-align: right; }
+[dir="rtl"] .text-right { text-align: left; }
+
+/* Flex & Grid direction awareness */
+[dir="rtl"] .flex:not(.flex-col) {
+  /* Natural RTL flow */
+}
+
+[dir="rtl"] .nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-stats {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-float-card.bottom-left {
+  left: auto;
+  right: 1.5rem;
+}
+
+[dir="rtl"] .hero-float-card.top-right {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* Dashboard sidebar */
+[dir="rtl"] .dashboard-sidebar {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  [dir="rtl"] .dashboard-main {
+    margin-right: var(--sidebar-width);
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  [dir="rtl"] .dashboard-sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .dashboard-sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile nav slide from left in RTL */
+[dir="rtl"] .mobile-nav {
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .mobile-nav.open {
+  transform: translateX(0);
+}
+
+/* Form & inputs */
+[dir="rtl"] .form-input,
+[dir="rtl"] .form-select,
+[dir="rtl"] .form-textarea {
+  text-align: right;
+}
+
+/* Table alignment */
+[dir="rtl"] .table th,
+[dir="rtl"] .table td {
+  text-align: right;
+}
+
+/* Breadcrumb */
+[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* Pricing features checkmarks */
+[dir="rtl"] .pricing-features li {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+/* Auth */
+[dir="rtl"] .auth-tabs {
+  flex-direction: row-reverse;
+}
+
+/* Spacing utilities that need flipping */
+[dir="rtl"] .ml-auto { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .mr-auto { margin-right: 0; margin-left: auto; }
+
+/* Icons that should flip */
+[dir="rtl"] .icon-flip {
+  transform: scaleX(-1);
+}
