@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Book Assessment | DriveMaster</title>
+  <meta name="description" content="Contact DriveMaster driving school. Book a free assessment, ask questions, or visit our training center.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="DriveMaster" class="logo-img"></a>
+      <nav class="nav">
+        <div class="nav-item-dropdown">
+        <a href="index.html" class="nav-link ">Home <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i></a>
+        <div class="nav-dropdown">
+          <a href="index.html" class="">Home 1 (Main)</a>
+          <a href="index-night.html" class="">Home 2 (Night)</a>
+        </div>
+      </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="vehicles.html" class="nav-link">Vehicles</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode"><i class="bi bi-sun-fill icon-sun"></i><i class="bi bi-moon-fill icon-moon"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Student Portal</a>
+        <button class="mobile-menu-btn" data-mobile-menu-open aria-label="Open menu"><i class="bi bi-list" style="font-size:1.5rem;"></i></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo"><img src="../assets/images/logo.png" alt="DriveMaster" class="logo-img"></a>
+      <button data-mobile-menu-close class="btn btn-ghost btn-icon"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="">Home</a>
+      <div class="mobile-nav-dropdown">
+        <a href="index.html" class="">Home 1 (Main)</a>
+        <a href="index-night.html" class="">Home 2 (Night)</a>
+      </div><a href="about.html">About</a><a href="courses.html">Courses</a>
+      <a href="instructors.html">Instructors</a><a href="vehicles.html">Vehicles</a><a href="fees.html">Fees</a>
+      <a href="contact.html" class="active">Contact</a><a href="login.html" class="btn btn-primary" style="margin-top:1rem;">Student Portal</a>
+    </nav>
+  </div>
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <div class="hero-grid" style="align-items:start;">
+          <div>
+            <h2 style="margin-bottom:0.5rem;">Get in Touch</h2>
+            <p style="margin-bottom:2rem;">Book a free assessment, ask about packages, or visit us. We typically respond within one business day.</p>
+            
+            <form data-validate data-demo="true" action="#" method="POST">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" required placeholder="Your name" data-error-required="Please enter your name.">
+                <div class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-input" required placeholder="you@email.com" data-error-email="Please enter a valid email.">
+                <div class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000">
+                <div class="form-error"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="interest">I'm interested in</label>
+                <select id="interest" name="interest" class="form-select">
+                  <option value="">Select...</option>
+                  <option>Four-Wheeler Full Course</option>
+                  <option>Two-Wheeler Course</option>
+                  <option>Free Assessment</option>
+                  <option>Pay Per Lesson</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message *</label>
+                <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us how we can help..." data-error-required="Please enter a message."></textarea>
+                <div class="form-error"></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-full">Send Message</button>
+              <div data-form-success style="display:none;margin-top:1rem;padding:1rem;background:var(--accent-soft);color:var(--accent);border-radius:var(--radius);text-align:center;">
+                Thank you! We'll get back to you shortly. (Demo mode — form not sent.)
+              </div>
+            </form>
+          </div>
+          
+          <div>
+            <div class="card anim-fade-up" style="margin-bottom:1.5rem;">
+              <div class="card-body">
+                <h3 style="margin-bottom:1rem;">Contact Info</h3>
+                <p style="display:flex;gap:0.75rem;align-items:flex-start;margin-bottom:1rem;">
+                  <i class="bi bi-geo-alt-fill" style="color:var(--accent);margin-top:0.2rem;"></i>
+                  <span>123 Safety Avenue<br>Metro City, CA 90210</span>
+                </p>
+                <p style="display:flex;gap:0.75rem;align-items:center;margin-bottom:1rem;">
+                  <i class="bi bi-telephone-fill" style="color:var(--accent);"></i>
+                  <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                </p>
+                <p style="display:flex;gap:0.75rem;align-items:center;margin-bottom:1rem;">
+                  <i class="bi bi-envelope-fill" style="color:var(--accent);"></i>
+                  <a href="mailto:hello@drivemaster.example">hello@drivemaster.example</a>
+                </p>
+                <p style="display:flex;gap:0.75rem;align-items:flex-start;margin:0;">
+                  <i class="bi bi-clock-fill" style="color:var(--accent);margin-top:0.2rem;"></i>
+                  <span>Mon–Sat: 8:00 AM – 7:00 PM<br>Sunday: Closed</span>
+                </p>
+              </div>
+            </div>
+            <div class="map-placeholder" style="padding:0; overflow:hidden; border:none;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.20502950020915!2d79.35677134562809!3d11.214231791162343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab2b3c5a0319bf%3A0x44b938fd699ad5c9!2sJayankondam%2C%20Tamil%20Nadu%20621802!5e0!3m2!1sen!2sin!4v1788333423948!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+    width="100%"
+    height="100%"
+    style="border:0; min-height:300px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  
+    <section class="section bg-secondary">
+      <div class="container">
+        <div class="section-header"><span class="section-label">Support</span><h2 class="section-title">We Are Here to Help</h2></div>
+        <div class="features-grid is-4 section-cards-accent">
+          <div class="card"><div class="card-body"><div class="card-icon"><i class="bi bi-telephone"></i></div><h3>Call</h3><p>Speak with our team in business hours.</p></div></div>
+          <div class="card"><div class="card-body"><div class="card-icon"><i class="bi bi-envelope"></i></div><h3>Email</h3><p>Reply within one business day.</p></div></div>
+          <div class="card"><div class="card-body"><div class="card-icon"><i class="bi bi-geo-alt"></i></div><h3>Visit</h3><p>Tour the training center.</p></div></div>
+          <div class="card"><div class="card-body"><div class="card-icon"><i class="bi bi-chat-dots"></i></div><h3>Portal</h3><p>Message after you log in.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-header"><span class="section-label">Hours</span><h2 class="section-title">When We Are Open</h2></div>
+        <div class="features-grid is-4 section-cards-soft">
+          <div class="card"><div class="card-body"><h3>Mon–Fri</h3><p>8:00 AM – 7:00 PM</p></div></div>
+          <div class="card"><div class="card-body"><h3>Saturday</h3><p>8:00 AM – 5:00 PM</p></div></div>
+          <div class="card"><div class="card-body"><h3>Sunday</h3><p>Closed</p></div></div>
+          <div class="card"><div class="card-body"><h3>Holidays</h3><p>Call to confirm slots.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-secondary">
+      <div class="container"><div class="cta-section"><h2>Ready to Start?</h2><p>Book a free assessment today.</p><a href="fees.html" class="btn btn-primary btn-lg">View Fees</a></div></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-header"><span class="section-label">FAQ</span><h2 class="section-title">Quick Answers</h2></div>
+        <div class="features-grid is-4 section-cards-outline">
+          <div class="card"><div class="card-body"><h3>Permit needed?</h3><p>Yes — bring a valid learner permit.</p></div></div>
+          <div class="card"><div class="card-body"><h3>Auto or manual?</h3><p>Both available when you enroll.</p></div></div>
+          <div class="card"><div class="card-body"><h3>Reschedule?</h3><p>Up to 24 hours before the lesson.</p></div></div>
+          <div class="card"><div class="card-body"><h3>Payments?</h3><p>See packages on the Fees page.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="../assets/images/logo-1.png" alt="DriveMaster" class="logo-img"></a>
+          <p class="footer-desc">Professional driving school helping thousands earn their license with confidence since 2014.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="vehicles.html">Our Vehicles</a>
+            <a href="fees.html">Fees & Packages</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <nav class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Student Login</a>
+            <a href="faq.html">FAQs</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <nav class="footer-links">
+            <a href="tel:+15551234567"><i class="bi bi-telephone"></i> +1 (555) 123-4567</a>
+            <a href="mailto:hello@drivemaster.example"><i class="bi bi-envelope"></i> hello@drivemaster.example</a>
+            <span style="color:var(--text-muted);font-size:0.9375rem;"><i class="bi bi-geo-alt"></i> 123 Safety Avenue, Metro City, CA 90210</span>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 DriveMaster. All rights reserved.</span>
+        <span>Privacy Policy & Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

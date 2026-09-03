@@ -1,0 +1,49 @@
+============================================
+  DriveMaster – Image File Names
+  Put your photos in this folder with these names
+============================================
+
+HOME (pages/index.html)
+  hero.jpg                 → Main hero photo
+  course-two-wheeler.jpg   → Two-wheeler course card
+  course-four-wheeler.jpg  → Four-wheeler course card
+  testimonial-1.jpg        → Student photo (Jessica)
+  testimonial-2.jpg        → Student photo (Rahul)
+  testimonial-3.jpg        → Student photo (Maria)
+
+ABOUT (pages/about.html)
+  about-building.jpg       → School / training center
+  team-1.jpg               → James Torres
+  team-2.jpg               → Elena Vargas
+  team-3.jpg               → David Okonkwo
+
+COURSES (pages/courses.html)
+  course-two-wheeler.jpg   → Two-wheeler section
+  course-four-wheeler.jpg  → Four-wheeler section
+
+INSTRUCTORS (pages/instructors.html)
+  instructor-1.jpg         → Sarah Chen
+  instructor-2.jpg         → Marcus Johnson
+  instructor-3.jpg         → Priya Patel
+  instructor-4.jpg         → David Kim
+  instructor-5.jpg         → Laura Martinez
+  instructor-6.jpg         → Ahmed Hassan
+
+VEHICLES (pages/vehicles.html)
+  vehicle-1.jpg            → Toyota Corolla
+  vehicle-2.jpg            → Honda Civic
+  vehicle-3.jpg            → Manual training car
+  vehicle-4.jpg            → Scooter
+  vehicle-5.jpg            → Motorcycle
+  vehicle-6.jpg            → SUV
+
+--------------------------------------------
+HOW TO USE
+1. Copy your photo into assets/images/
+2. Rename it to match the name above
+   (e.g. rename my-car.jpg → vehicle-1.jpg)
+3. Refresh the page – the image appears automatically
+
+Formats: .jpg  .jpeg  .png  .webp
+Recommended size: 800–1200 px wide
+============================================
